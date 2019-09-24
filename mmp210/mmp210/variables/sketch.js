@@ -1,5 +1,3 @@
-// self portrait 
-
 var x = 300;
 var y = 200;
 var faceSize = 300;

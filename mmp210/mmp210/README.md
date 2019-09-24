@@ -1,2 +1,0 @@
-# MMPclass
- assigment

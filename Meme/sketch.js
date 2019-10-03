@@ -1,24 +1,27 @@
 // meme version 1 10.3.19//
 
-var cat;
+var img;
 
-function preload(){
-    cat = loadImage("cat.jpg");
+function preload() {
+	img = loadImage("baby.jpeg");
+    
 }
-
 function setup() {
  var canvas = createCanvas (640, 400); 
     canvas.drawingContext.miterLimit = 2; // fix for stroke edges
 	background(254);
+    
+
 }
 
 function draw(){
     background("white")
-
-   textSize(100);
-    text("Hello world", 20, 100);
+    textSize(100);
+    text("why", 20, 100);
     
-    textSize(20);
-    text("MMP CLASS",20, 200);
+    
+    
+   
+    image(img,0,0, width, height,);
     
 }

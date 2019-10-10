@@ -1,27 +1,21 @@
-// meme version 1 10.3.19//
+// meme draft//
 
 var img;
 
 function preload() {
-	img = loadImage("baby.jpeg");
-    
+    img = loadImage("baby.jpeg");
 }
-function setup() {
- var canvas = createCanvas (640, 400); 
-    canvas.drawingContext.miterLimit = 2; // fix for stroke edges
-	background(254);
-    
 
+function setup(){
+    createCanvas(640, 480);
 }
 
 function draw(){
-    background("white")
-    textSize(100);
-    text("why", 20, 100);
     
+    image(img,0,0, width, height);
+    textSize(20);
+    text("When you ask your mom to bring home HoneyNut Cheerios", 20, 20);
     
-    
-   
-    image(img,0,0, width, height,);
-    
+    text("and she bring home Cheerios", 20, 460);
 }
+

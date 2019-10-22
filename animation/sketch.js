@@ -1,18 +1,22 @@
-// meme draft//
-
-var img;
-
-function preload() {
-    img = loadImage("baby.jpeg");
+function setup() {
+    createCanvas(500, 400);
 }
 
-function setup(){
-    createCanvas(640, 480);
-}
 
-function draw(){
+var x = 100;
+var speed = 5;
+function draw() {
+    background("Red");
+    fill(300, 200);
+    textSize(50);
+    textFont("Comic Sans MS");
+	text("Dajon", x, 50, 50);
+    x += speed;
+    text("X",  200, 200);
     
-    image(img,0,0, width, height);
     
+    text("Riley", x, 300, 300);
+	if (x > width || x < 0) {
+		speed *= -2;
+	}
 }
-

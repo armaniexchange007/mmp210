@@ -1,13 +1,17 @@
+
+
+function setup() {
+    createCanvas(300, 300);
+}
+
+
 function draw() {
-    createCanvas(800,800)
-	background("white");
-	strokeWeight(2);
-	fill("plum");
+	background(220);
+	rectMode(CENTER);
 
-	var x = mouseX;
-	var y = mouseY;
-	line(x, y, 0, 0);
-
-	
-	circle(x, y, 40);
+	// AND
+	if (mouseIsPressed && mouseX > width/2) {
+		textSize(100);
+        text("Dajon", 20, 250);
+	}	
 }
